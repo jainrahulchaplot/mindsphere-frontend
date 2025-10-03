@@ -68,7 +68,7 @@ export default function VoiceAgent({ onSessionStart, onSessionEnd, className = '
       {!sessionStarted ? (
         <div className="text-center space-y-4">
           <h3 className="text-xl font-semibold text-white mb-4">
-            Voice Meditation Assistant
+            Your Voice Meditation Assistant
           </h3>
           <p className="text-gray-400 mb-6">
             Start a voice conversation with your AI meditation guide
