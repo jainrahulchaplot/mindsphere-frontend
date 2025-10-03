@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Card from './Card';
 import Button from './Button';
 import Skeleton from './Skeleton';
-import VoiceJournal from './VoiceJournal';
+import PremiumVoiceNotes from './PremiumVoiceNotes';
 import { useJournalSubmit, useUpdateStreak } from '../api/hooks';
 
 type Props = { userId: string; sessionId?: string | null; onComplete?: ()=>void };
@@ -22,10 +22,11 @@ export default function JournalCard({ userId, sessionId=null, onComplete }: Prop
 
   return (
     <div className="grid-gap">
-      <VoiceJournal 
-        onTranscription={setText}
+      <PremiumVoiceNotes 
+        value={text}
+        onChange={setText}
         userId={userId}
-        sessionId={sessionId}
+        placeholder="Share your thoughts or use voice notes..."
       />
       
       <Card>

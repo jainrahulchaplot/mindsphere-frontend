@@ -51,18 +51,11 @@ export default defineConfig({
           // Feature chunks
           'voice-features': [
             './src/components/VoiceAgent',
-            './src/components/VoiceRecorder',
-            './src/components/VoicePlayer',
-          ],
-          'music-features': [
-            './src/components/MusicPlayer',
-            './src/components/MusicLibrary',
-            './src/components/MusicUpload',
+            './src/components/VoiceVisualizer',
+            './src/components/PremiumVoiceNotes',
           ],
           'journal-features': [
-            './src/components/Journal',
-            './src/components/JournalEntry',
-            './src/components/JournalList',
+            './src/components/JournalCard',
           ],
         },
         
